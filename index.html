@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>webrtc_wasm</title>
+  </head>
+  <body>
+    <video id="remote_video" autoplay playsinline muted></video>
+    <script type="module">
+      import init, { start } from "./pkg/webrtc_wasm.js";
+      init().then(() => {
+        start("127.0.0.1:10002");
+      });
+    </script>
+  </body>
+</html>
+<style>
+video {
+    width: 1920px;  /* or 100% for full width */
+    height: 1080px; /* or auto for maintaining aspect ratio */
+}
+</style>
