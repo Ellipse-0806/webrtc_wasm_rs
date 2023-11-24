@@ -1,0 +1,2 @@
+# webrtc_wasm_rs
+wasm-bindgenでwebrtcストリームを受信するプロジェクト
